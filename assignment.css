@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 80%;
+    max-width: 700px;
+    border: 2px solid black;
+}
+
+.img-large {
+    display: block;
+    margin: auto;
+}
+
+.img-small {
+    display: none;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+
+    .img-large {
+        display: none;
+    }
+
+    .img-small {
+        display: block;
+    }
+
+}
