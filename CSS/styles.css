@@ -19,7 +19,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 35px;
     list-style: none;
 }
 
@@ -57,3 +57,76 @@ a{
     color: white;
 }
 
+.hero {
+    height: 90vh;
+    background: url("../images/banner.png") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: darkred;
+}
+
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 40px;
+}
+
+.video-text {
+    flex: 1;
+}
+
+.video-box {
+    flex: 1;
+}
+
+.video-box video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.video-text p {
+    font-size: 18px;
+    color: #444;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgba(255, 0, 0, 0.615);
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
