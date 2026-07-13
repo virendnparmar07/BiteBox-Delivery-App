@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", serif;
+}
+
+header {
+    top: 0;
+    position: sticky;
 }
 
 nav{
@@ -61,6 +66,7 @@ a{
     height: 90vh;
     background: url("../images/banner.png") no-repeat center/cover;
     display: flex;
+    padding: 300px 300px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -68,7 +74,7 @@ a{
 
 .hero button {
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background: red;
     color: white;
     border: none;
@@ -109,6 +115,8 @@ a{
 .video-text p {
     font-size: 18px;
     color: #444;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 
 .about {
