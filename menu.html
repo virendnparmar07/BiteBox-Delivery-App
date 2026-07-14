@@ -3,9 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef08658b28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="images/favicon/favicon_io/" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Menu</title>
 </head>
 <body>
-    <h1>Menu</h1>
+    <nav>
+            <div>
+                <img src="images/logo.png" alt="logo" width="300px">
+            </div>
+            <ul>
+                <li><a href="home.html" class="active" style="color: red;"><i class="fa-solid fa-house-user"></i><u>Home</u></a></li>
+                <li><a href="menu.html"><i class="fa-solid fa-bars"></i> Menu</a></li>
+                <li><a href="bitedeals.html"><i class="fa-solid fa-handshake-angle"></i> Bite Deals</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-plus"></i> Cart</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- start of filter section -->
+        <div class="category-icons">
+            <div class="icon-box">
+                <img src="images/meal.png" alt="all">
+                <p>All</p>
+            </div>
+
+            <div class="icon-box">
+                <img src="images/Burgers.png" alt="burgers">
+                <p>Burgers</p>
+            </div>
+            
+            <div class="icon-box">
+                <img src="images/Pizza.png" alt="pizzas">
+                <p>Pizza</p>
+            </div>
+
+            <div class="icon-box">
+                <img src="images/fries.png" alt="fries">
+                <p>Fries</p>
+            </div>
+
+            <div class="icon-box">
+                <img src="images/pasta.png" alt="pastas">
+                <p>Pasta</p>
+            </div>
+
+            <div class="icon-box">
+                <img src="images/sandwich.png" alt="sandwiches">
+                <p>Sandwiches</p>
+            </div>
+
+            <div class="icon-box">
+                <img src="images/coffee.png" alt="coffees">
+                <p>Coffee</p>
+            </div>
+
+            <div class="icon-box">
+                <img src="images/momos.png" alt="momos">
+                <p>Momos</p>
+            </div>
+        </div>
+        <!-- end of filter section -->
+
+
+        <!-- start of menu section -->
+        <section class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-container">
+                <div class="card">
+                    <img src="images/Burgers.png" alt="burger">
+                    <h3>Burgers</h3>
+                    <p>Chicken Burgers</p>
+                    <span>₹199</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/alooburgers.png" alt="burger">
+                    <h3>Burgers</h3>
+                    <p>Aloo Tikki Burgers</p>
+                    <span>₹99</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/Pizza.png" alt="pizza">
+                    <h3>Pizzas</h3>
+                    <p>Onion & Capsicum Pizza</p>
+                    <span>₹149</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/burato pizza.png" alt="pizza">
+                    <h3>Pizzas</h3>
+                    <p>Itailian Pizza</p>
+                    <span>₹189</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/fries.png" alt="fries">
+                    <h3>Fries</h3>
+                    <p>Peri Peri Cheese Fries</p>
+                    <span>₹169</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/saltyfries.png" alt="fries">
+                    <h3>Fries</h3>
+                    <p>Fries</p>
+                    <span>₹129</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/pasta.png" alt="pasta">
+                    <h3>Pasta</h3>
+                    <p>Red Sauce Pasta</p>
+                    <span>₹220</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/whitesauce.png" alt="pasta">
+                    <h3>Pasta</h3>
+                    <p>White Sauce Pasta</p>
+                    <span>₹190</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/sandwich.png" alt="sandwich">
+                    <h3>Sandwich</h3>
+                    <p>Cheese Grill Sandwich</p>
+                    <span>₹230</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/triplelayer.png" alt="sandwich">
+                    <h3>Sandwich</h3>
+                    <p>Triple Layer Sandwich</p>
+                    <span>₹245</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/meal.png" alt="meals">
+                    <h3>Combo</h3>
+                    <p>Meals</p>
+                    <span>₹289</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/latte.png" alt="coffee">
+                    <h3>Coffee</h3>
+                    <p>Ice Latte Coffee</p>
+                    <span>₹89</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/americano.png" alt="coffee">
+                    <h3>Coffee</h3>
+                    <p>Americano Coffee</p>
+                    <span>₹139</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/momos.png" alt="momos">
+                    <h3>Momos</h3>
+                    <p>Paneer Peri Peri Momos</p>
+                    <span>₹149</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="images/kurkure.png" alt="momos">
+                    <h3>Momos</h3>
+                    <p>Kurkure Fries Momos</p>
+                    <span>₹169</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <!-- end of menu section -->
+
 </body>
 </html>
