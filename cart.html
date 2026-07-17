@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Menu</title>
+    <title>BiteBox</title>
 </head>
 <body>
-    <nav>
+    <header>
+        <nav>
             <div>
                 <img src="images/logo.png" alt="logo" width="300px">
             </div>
@@ -24,5 +25,84 @@
                 <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
             </ul>
         </nav>
-</body>
-</html>
+    </header>
+    <!-- end of header -->
+
+    <section class="cart">
+        <table>
+            <thead>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="item">
+                        <img src="images/alooburgers.png">
+                        <div>
+                            <h4>Cheese Burger</h4>
+                            <p>Juicey Grilled burger</p>
+                        </div>
+                    </td>
+                    <td>₹99</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>₹99</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+
+                <tr>
+                    <td class="item">
+                        <img src="images/kurkure.png">
+                        <div>
+                            <h4>Momos</h4>
+                            <p>Kurkure Momos</p>
+                        </div>
+                    </td>
+                    <td>₹169</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>₹99</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+
+                <tr>
+                    <td class="item">
+                        <img src="images/Garlic.png">
+                        <div>
+                            <h4>Snack</h4>
+                            <p>Garlic Bread</p>
+                        </div>
+                    </td>
+                    <td>₹89</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>₹99</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+                <tr class="grand-total">
+                    <td colspan="3">Grand Total</td>
+                    <td>₹357</td>
+                    <td><button>Proceed</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
