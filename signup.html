@@ -11,24 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>BiteBox</title>
 </head>
-
 <body>
     <section class="auth-container">
         <div class="auth-box">
-            <img src="images/logo.png" alt="logo" width="300px">
-            <h2>Welcome Back!</h2>
+            <h2>Create An Account</h2>
             <form>
-                <label for="Email">Name: </label>
-                <input type="email" placeholder="Enter Your Email" required>
+                <label for="Name">Name: </label>
+                <input type="text" placeholder="Full Name" required>
+                
+                <label for="Email">Email: </label>
+                <input type="email" placeholder="Enter Email" required>
+
                 <label for="Password">Password: </label>
-                <input type="password" placeholder="Enter Your Password" required>
-                <p><a href="signup.html">Forgot Password?</a></p>
-                <button type="submit">Submit</button>
+                <input type="password" placeholder="Enter Password" required>
+
+                <label for="confirm">Confirm Password: </label>
+                <input type="password" placeholder="Enter the Same Password" required>
+
+                <button type="submit">Sign Up</button>
             </form>
             <br>
             <hr>
-            <p>Don't Have an Account <a href="signup.html">Sign Up</a></p>
+            <p>Already Have an Account? <a href="login.html">Login</a></p>
         </div>
-
     </section>
 </body>
