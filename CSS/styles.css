@@ -1,4 +1,4 @@
-/* :root{
+:root{
     --primary:#ff2b2b;
     --secondary:#ffb703;
     --dark:#121212;
@@ -6,7 +6,7 @@
     --gray:#f5f5f5;
     --text:#555;
     --shadow:0 10px 30px rgba(0,0,0,.12);
-} */
+}
 
 *{
     margin: 0;
@@ -14,6 +14,17 @@
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
     
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+    /* background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)); */
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 nav{
@@ -49,11 +60,13 @@ nav a{
     display:flex;
     align-items:center;
     gap:8px;
+    position: relative;
 }
 
 nav a:hover{
     color:var(--primary);
     transform:translateY(-2px);
+    width:100%;
 }
 
 nav h2{
@@ -90,24 +103,38 @@ a{
     height: 90vh;
     background: url("../images/banner.png") no-repeat center/cover;
     display: flex;
-    padding: 300px 300px;
+    padding: 0 40px;
     justify-content: center;
     align-items: center;
     color: white;
+    position:relative;
 }
 
 .hero button {
     margin-top: 15px;
-    padding: 10px 10px;
     background: red;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    padding:15px 35px;
+    border-radius:50px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
 }
 
 .hero button:hover {
     background: darkred;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(255,0,0,.4);
 }
 
 .video-section {
@@ -169,7 +196,12 @@ a{
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: 4s;
+    transition:.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 .card img {
@@ -193,7 +225,7 @@ a{
 
 .menu-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));;
     gap: 20px;
     padding: 20px;
 }
@@ -381,8 +413,9 @@ tbody tr {
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
-    margin-left: 215px;
     margin-bottom: 20px;
+    display:block;
+    margin:20px auto;
 }
 
 .auth-box button:hover {
@@ -404,8 +437,59 @@ tbody tr {
     color: bisque;
 }
 
+.auth-box input[type=email],
+.auth-box input[type=password]{
+    width:100%;
+    padding:15px;
+    border-radius:10px;
+    border:2px solid transparent;
+    background:#fff;
+    font-size:16px;
+    transition:.3s;
+}
+
+.auth-box input:focus{
+    outline:none;
+    border-color:#ff2b2b;
+    box-shadow:0 0 12px rgba(255,43,43,.4);
+}
+
+.remember{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:18px;
+}
+
+.remember label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:0;
+}
+
 form {
     text-align: left;
+}
+
+.google-btn{
+    background:white;
+    color:#333;
+    margin-top:20px;
+    display: flex;
+}
+
+.google-btn:hover{
+    background:#f2f2f2;
+}
+
+.facebook-btn{
+    background:#1877F2;
+    color:white;
+}
+
+.facebook-btn:hover{
+    background:#125dcc;
 }
 
 .deals-page {
@@ -443,7 +527,7 @@ form {
 
 .combo-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap: 25px;
 }
 
@@ -462,7 +546,7 @@ form {
     margin-bottom: 15px;
 }
 
-.combo-car h4 {
+.combo-card h4 {
     margin: 10px 0;
 }
 
@@ -491,8 +575,8 @@ form {
 
 .deals-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 }
 
 .deal-card {

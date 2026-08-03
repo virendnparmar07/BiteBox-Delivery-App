@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ef08658b28.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" href="images/favicon/favicon_io/" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>BiteBox</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/ef08658b28.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="icon" href="images/favicon/favicon_io/" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>BiteBox</title>
+    </head>
 
-<body>
-    <section class="auth-container">
-        <div class="auth-box">
-            <img src="images/logo.png" alt="logo" width="300px">
-            <h2>Welcome Back!</h2>
-            <form>
-                <label for="Email">Name: </label>
-                <input type="email" placeholder="Enter Your Email" required>
-                <label for="Password">Password: </label>
-                <input type="password" placeholder="Enter Your Password" required>
-                <p><a href="signup.html">Forgot Password?</a></p>
-                <button type="submit">Submit</button>
-            </form>
-            <br>
-            <hr>
-            <p>Don't Have an Account <a href="signup.html">Sign Up</a></p>
-        </div>
+    <body>
+        <section class="auth-container">
+            <div class="auth-box">
+                <img src="images/logo.png" alt="logo" width="300px">
+                <h2>Welcome Back!</h2>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
 
-    </section>
-</body>
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter Your Password"
+                        required
+                    >
+                    <div class="remember">
+
+                        <label>
+                        <input type="checkbox">
+                        Remember Me
+                        </label>
+
+                        <a href="signup.html">Forgot Password?</a>
+                        
+
+                    </div>
+                    <button type="button" onclick="login(event)">Login</button>
+
+                    <a href="index.html" class="back-home">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Home
+                    </a>
+                </form>
+                <br>
+                <hr>
+                <p id="error" style="color: red;"></p>
+                <p>Don't Have an Account? <a href="signup.html">Sign Up</a></p>
+                
+            </div>
+
+        </section>
+        <script src="JavaScript/scripts.js"></script>
+    </body>
+</html>
