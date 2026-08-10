@@ -18,9 +18,15 @@
     <header>
         <nav>
             <div>
-                <img src="images/logo.png" alt="logo" width="300px">
+                <a href="index.html"><img src="images/logo.png" alt="logo" width="300px"></a>
             </div>
-            <ul>
+
+
+            <button class="menu-btn text-white" onclick="toggleMenu()">
+                <i id="menuIcon" class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="navMenu">
                 <li><a href="home.html" class="active" style="color: red;"><i class="fa-solid fa-house-user"></i><u>Home</u></a></li>
                 <li><a href="menu.html"><i class="fa-solid fa-bars"></i> Menu</a></li>
                 <li><a href="bitedeals.html"><i class="fa-solid fa-handshake-angle"></i> Bite Deals</a></li>
@@ -35,7 +41,7 @@
         <div class="hero-content">
             <h1>Delicious Food Delivered Fast</h1>
             <p>Order your favorite meals anytime, anywhere</p>
-            <button>Order Now</button>
+            <button><a href="menu.html">Order Now</a></button>
         </div>
     </section>
     <!-- end of hero section -->
@@ -61,11 +67,43 @@
     <!-- end of about section -->
      
     <footer>
-        <div class="footer-section">
-            <p>@ 2026 BiteBox | All Rights Reserved</p>
-        </div>
-    </footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>Bite<span>Box</span></h2>
+                <p>Delicious Food Delivered Fast at your Doorstep...</p>
+            </div>
 
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="bitedeals.html">Deals</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>Email: support@biteboxx.com</p>
+                <p>Phone: +91 77380 61107</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Follow Us on!!</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Bitbox | All Rights Reserved</p>
+        </div>
+
+    </footer>
 
     <script src="JavaScript/scripts.js"></script>
 </body>

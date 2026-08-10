@@ -25,7 +25,7 @@
         <h2 class="c1">heading3</h2>
         <li>List4</li>
      </ul> -->
-    <script>
+    <!-- <script>
         // var list = document.getElementById("myname");
         // console.log(list);
         // console.log(list.innerHTML);
@@ -44,6 +44,83 @@
         //     console.log(list[i].innerHTML);
         //     list[i].innerHTML = '<h1>Welcome to select element by class</h1>';
         // }
-    </script>
+    </script> -->
+
+    <!-- <ul id="list">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+    </ul>
+
+    <script>
+        let ele = document.getElementById("list");
+        console.log(ele)
+        let newEle = document.createElement('li');
+        newEle.textContent = 'list6';
+        pos = ele.firstElementChild.nextElementSibling;
+        console.log(pos)
+        ele.insertBefore(newEle, pos);
+    </script> -->
+
+    <!-- <ul id="list">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+        <li>List 5</li>
+    </ul>
+
+    <script>
+        let prnt = document.getElementById("list");
+        let child = prnt.firstElementChild;
+        prnt.removeChild(child);
+        let last_child = prnt.lastElementChild;
+        prnt.removeChild(last_child);
+        document.body.removeChild(prnt);
+    </script> -->
+
+    <!-- <ul id="list">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+    </ul>
+
+    <script>
+        let ele = document.getElementById("list");
+        let copyele = ele.cloneNode(true);
+        console.log(copyele);
+        document.body.append(copyele);
+    </script> -->
+
+    <!-- <ul id="list">
+        <li>AC</li>
+        <li>TV</li>
+        <li>Cooler</li>
+        <li>Fridge</li>
+        <li>Washing Machine</li>
+    </ul>
+
+    <script>
+        let prnt = document.getElementById("list");
+        let new_list = document.createElement("li");
+        new_list.textContent = "Mixer";
+        let pos = prnt.firstElementChild.nextElementSibling;
+        prnt.replaceChild(new_list, pos);
+    </script> -->
+
+    <!-- <div id="intro">
+        <h2>heading1</h2>
+        <p>This is p paragraph</p>
+    </div>
+
+    <script>
+        let ele = document.getElementById("intro");
+        let new_ele = "<h2>New Heading tag</h2>";
+        ele.insertAdjacentHTML("afterend", new_ele); //beforeened, afterend, beforebegin, afterbegin
+    </script> -->
 </body>
 </html>
