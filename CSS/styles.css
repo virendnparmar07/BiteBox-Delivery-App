@@ -719,6 +719,12 @@ footer a:hover {
     color: white
 }
 
+.menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+}
+
 @media (max-width: 770px) {
 
     header {
@@ -750,7 +756,7 @@ footer a:hover {
         z-index: 1001;
         position: absolute;
         right: 20px;
-        top: 25px;
+        top: 30px;
     }
 
     .menu-btn:hover {
@@ -843,3 +849,4 @@ footer a:hover {
         text-align: center;
     }
 }
+
