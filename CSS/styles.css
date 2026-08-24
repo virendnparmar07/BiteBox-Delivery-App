@@ -26,12 +26,24 @@ body{
     background-attachment:fixed;
 }
 
+img, video{
+    max-width:100%;
+    height:auto;
+}
+
+.nav-logo img{
+    width:clamp(160px, 25vw, 300px);
+    display:block;
+}
+
 nav{
     width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:16px 60px;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:16px clamp(20px, 5vw, 60px);
     background:rgba(0,0,0,.85);
     backdrop-filter:blur(12px);
     border-bottom:1px solid rgba(255,255,255,.1);
@@ -98,11 +110,16 @@ a{
     color: white;
 }
 
+nav a.active{
+    color: var(--primary);
+}
+
 .hero {
-    height: 90vh;
+    min-height: 90vh;
     background: url("../images/banner.png") no-repeat center/cover;
     display: flex;
-    padding: 0 40px;
+    text-align: center;
+    padding: 40px clamp(20px, 5vw, 40px);
     justify-content: center;
     align-items: center;
     color: white;
@@ -122,12 +139,12 @@ a{
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:clamp(28px, 6vw, 60px);
     margin-bottom:15px;
 }
 
 .hero p{
-    font-size:22px;
+    font-size:clamp(16px, 2.5vw, 22px);
 }
 
 .hero button:hover {
@@ -138,10 +155,16 @@ a{
 
 .video-section {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: clamp(20px, 5vw, 50px);
     gap: 40px;
+}
+
+.video-text,
+.video-box {
+    min-width: min(100%, 320px);
 }
 
 .video-text {
@@ -673,7 +696,7 @@ footer {
 
 .footer-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 30px;
 }
 
@@ -723,6 +746,20 @@ footer a:hover {
     display: none;
     background: transparent;
     border: none;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 14px 24px;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -799,17 +836,9 @@ footer a:hover {
     }
 
     .hero {
-        height: 70vh;
+        min-height: 70vh;
         text-align: center;
         padding: 20px;
-    }
-
-    .hero h1 {
-        font-size: 22px;
-    }
-
-    .hero p {
-        font-size: 15px;
     }
 
     .video-section {
@@ -840,8 +869,12 @@ footer a:hover {
         padding: 15px;
     }
 
-    icon-box {
+    .icon-box {
         min-width: 80px;
+    }
+
+    footer {
+        padding: 30px 20px;
     }
 
     .footer-container {
